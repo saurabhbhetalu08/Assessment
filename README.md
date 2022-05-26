@@ -3,7 +3,7 @@
 # Instructons to Run code.
 
 1. Copy GitHub link from mail(https://github.com/saurabhbhetalu08/Assessment.git).
-2. Open Eclipes on windows OS
+2. Open Eclipes on windows OS.
 3. Go to 'File' and click on 'Import'.
 4. Select 'Git' folder and 'project from Git' option then click Next.
 5. Select 'Clone URL' and click Next.
