@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-05-26T17:24:26 IST" name="Suite" finished-at="2022-05-26T17:25:43 IST" duration-ms="76988">
+    <groups>
+    </groups>
+    <test started-at="2022-05-26T17:24:26 IST" name="Test" finished-at="2022-05-26T17:25:43 IST" duration-ms="76988">
+      <class name="Test_Classes.TC01_Wiki">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:Test_Classes.TC01_Wiki@64cd705f]" started-at="2022-05-26T17:24:26 IST" name="setUpMethod" finished-at="2022-05-26T17:24:43 IST" duration-ms="17217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="VerifyCountryNameFromWIKI()[pri:0, instance:Test_Classes.TC01_Wiki@64cd705f]" started-at="2022-05-26T17:24:43 IST" name="VerifyCountryNameFromWIKI" finished-at="2022-05-26T17:24:43 IST" duration-ms="209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyCountryNameFromWIKI -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:Test_Classes.TC01_Wiki@64cd705f]" started-at="2022-05-26T17:24:43 IST" name="tearDownMethod" finished-at="2022-05-26T17:24:44 IST" duration-ms="512" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:Test_Classes.TC01_Wiki@64cd705f]" started-at="2022-05-26T17:24:44 IST" name="setUpMethod" finished-at="2022-05-26T17:24:59 IST" duration-ms="14862" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="VerifyReleaseDateFromWIKI()[pri:0, instance:Test_Classes.TC01_Wiki@64cd705f]" started-at="2022-05-26T17:24:59 IST" name="VerifyReleaseDateFromWIKI" finished-at="2022-05-26T17:24:59 IST" duration-ms="108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyReleaseDateFromWIKI -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:Test_Classes.TC01_Wiki@64cd705f]" started-at="2022-05-26T17:24:59 IST" name="tearDownMethod" finished-at="2022-05-26T17:24:59 IST" duration-ms="453" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+      </class> <!-- Test_Classes.TC01_Wiki -->
+      <class name="Test_Classes.TC02_IMDB">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:Test_Classes.TC02_IMDB@35ef1869]" started-at="2022-05-26T17:24:59 IST" name="setUpMethod" finished-at="2022-05-26T17:25:21 IST" duration-ms="21659" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="verifyCountryNameFromIMBD()[pri:0, instance:Test_Classes.TC02_IMDB@35ef1869]" started-at="2022-05-26T17:25:21 IST" name="verifyCountryNameFromIMBD" finished-at="2022-05-26T17:25:21 IST" duration-ms="322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCountryNameFromIMBD -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:Test_Classes.TC02_IMDB@35ef1869]" started-at="2022-05-26T17:25:21 IST" name="tearDownMethod" finished-at="2022-05-26T17:25:22 IST" duration-ms="447" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:Test_Classes.TC02_IMDB@35ef1869]" started-at="2022-05-26T17:25:22 IST" name="setUpMethod" finished-at="2022-05-26T17:25:42 IST" duration-ms="20078" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpMethod -->
+        <test-method signature="verifyReleaseDateFromIMBD()[pri:0, instance:Test_Classes.TC02_IMDB@35ef1869]" started-at="2022-05-26T17:25:42 IST" name="verifyReleaseDateFromIMBD" finished-at="2022-05-26T17:25:42 IST" duration-ms="447" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyReleaseDateFromIMBD -->
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:Test_Classes.TC02_IMDB@35ef1869]" started-at="2022-05-26T17:25:42 IST" name="tearDownMethod" finished-at="2022-05-26T17:25:43 IST" duration-ms="597" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+      </class> <!-- Test_Classes.TC02_IMDB -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
