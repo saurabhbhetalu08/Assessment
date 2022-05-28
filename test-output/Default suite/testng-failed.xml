@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test_Classes.TC01_Wiki">
+      <class name="Test_Classes.TC03_Compare_Deatails_of_IMDb_Wiki">
         <methods>
-          <include name="VerifyCountryNameFromWIKI"/>
+          <include name="CompareReleaseDateonWiki_IMBD"/>
           <include name="setUpMethod"/>
           <include name="tearDownMethod"/>
         </methods>
-      </class> <!-- Test_Classes.TC01_Wiki -->
+      </class> <!-- Test_Classes.TC03_Compare_Deatails_of_IMDb_Wiki -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
