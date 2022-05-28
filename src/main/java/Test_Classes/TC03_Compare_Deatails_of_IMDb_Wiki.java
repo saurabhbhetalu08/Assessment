@@ -10,11 +10,11 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import POM_Classes.IMDB_Page;
+import POM_Classes.IMDb_Page;
 import POM_Classes.Wiki_Page;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class TC03_Compare_Deatails_of_IMBD_Wiki 
+public class TC03_Compare_Deatails_of_IMDb_Wiki 
 {
 	WebDriver driver;
 	SoftAssert soft = new SoftAssert();
@@ -34,19 +34,19 @@ public class TC03_Compare_Deatails_of_IMBD_Wiki
 	}
 	
 	@Test
-	public void CompareCountryonWiki_IMBD()
+	public void CompareCountryonWiki_IMDb()
 	{		
 		driver.get("https://www.imdb.com/title/tt9389998/");
-		System.out.println("Open Pushpa The Rise on IMBD");
+		System.out.println("Open Pushpa The Rise on IMDb");
 		
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0, 5560)");
 		System.out.println("Scroll Down");
 		
-		IMDB_Page ip= new IMDB_Page(driver);
-		String CountryOnIMBD = ip.extractCountry();
+		IMDb_Page ip= new IMDb_Page(driver);
+		String CountryOnIMDb = ip.extractCountry();
 		
-		System.out.println("Print Country Name on IMBD- "+ip.extractCountry());
+		System.out.println("Print Country Name on IMDb- "+ip.extractCountry());
 		
 		driver.get("https://en.wikipedia.org/wiki/Pushpa:_The_Rise");
 		System.out.println("Open Pushpa The Rise on Wikipidia");
@@ -60,7 +60,7 @@ public class TC03_Compare_Deatails_of_IMBD_Wiki
 		
 		System.out.println("Print Country Name on Wiki- "+wp.extractCountry());
 
-		soft.assertEquals(CountryOnIMBD,CountryOnWiki);
+		soft.assertEquals(CountryOnIMDb,CountryOnWiki);
 		System.out.println("Compare Deatails");
 		soft.assertAll();
 	}
@@ -75,10 +75,10 @@ public class TC03_Compare_Deatails_of_IMBD_Wiki
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0, 5560)");
 		System.out.println("Scroll Down");
-		IMDB_Page ip= new IMDB_Page(driver);
-		String DateOnIMBD = ip.extractrelease();
+		IMDb_Page ip= new IMDb_Page(driver);
+		String DateOnIMDb = ip.extractrelease();
 		
-		System.out.println("Print Release Date on IMBD- "+ip.extractrelease());
+		System.out.println("Print Release Date on IMDb- "+ip.extractrelease());
 		
 		driver.get("https://en.wikipedia.org/wiki/Pushpa:_The_Rise");
 		System.out.println("Open Pushpa The Rise on Wikipidia");
@@ -92,7 +92,7 @@ public class TC03_Compare_Deatails_of_IMBD_Wiki
 		
 		System.out.println("Print Release Date on Wiki- "+wp.extractrelease());
 		
-		soft.assertEquals(DateOnIMBD, DateOnWiki);
+		soft.assertEquals(DateOnIMDb, DateOnWiki);
 		System.out.println("Compare Deatails");
 		soft.assertAll();
 				

@@ -10,10 +10,10 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import POM_Classes.IMDB_Page;
+import POM_Classes.IMDb_Page;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class TC02_IMDB
+public class TC02_IMDb
 {
 	WebDriver driver;
 	
@@ -31,7 +31,7 @@ public class TC02_IMDB
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 		
 		driver.get("https://www.imdb.com/title/tt9389998/");
-		System.out.println("Open URL of IDBD");
+		System.out.println("Open URL of IMDb");
 		
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0, 5560)");
@@ -39,12 +39,12 @@ public class TC02_IMDB
 	}
 	
 	@Test
-	public void verifyCountryNameFromIMBD()
+	public void verifyCountryNameFromIMDb()
 	{
 		
-		IMDB_Page ip = new IMDB_Page(driver);
+		IMDb_Page ip = new IMDb_Page(driver);
 		
-		System.out.println("Print Country Name- "+ip.extractCountry());
+		System.out.println("Print Country Name on IMDb- "+ip.extractCountry());
 		
 		String actualName = ip.extractCountry();
 		String expectedName = "India";
@@ -55,12 +55,12 @@ public class TC02_IMDB
 	}
 	
 	@Test
-	public void verifyReleaseDateFromIMBD()
+	public void verifyReleaseDateFromIMDb()
 	{
 		
-		IMDB_Page ip = new IMDB_Page(driver);
+		IMDb_Page ip = new IMDb_Page(driver);
 		
-		System.out.println("Print Release Date- "+ip.extractrelease());
+		System.out.println("Print Release Date on IMDb- "+ip.extractrelease());
 		
 		String actualDate = ip.extractrelease();
 		String expectedDate = "January 7, 2022 (United States)";

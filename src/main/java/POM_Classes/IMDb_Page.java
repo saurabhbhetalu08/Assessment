@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class IMDB_Page 
+public class IMDb_Page 
 {
 	private WebDriver driver;
 	
@@ -15,7 +15,7 @@ public class IMDB_Page
 	@FindBy(xpath="(//div//ul//li//a)[81]")
 	private WebElement release;
 	
-	public IMDB_Page(WebDriver driver)
+	public IMDb_Page(WebDriver driver)
 	{
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
