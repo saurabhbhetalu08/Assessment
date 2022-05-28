@@ -1,63 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-26T17:24:26 IST" name="Suite" finished-at="2022-05-26T17:25:43 IST" duration-ms="76988">
+  <suite started-at="2022-05-28T10:40:07 IST" name="Default suite" finished-at="2022-05-28T10:40:15 IST" duration-ms="7873">
     <groups>
     </groups>
-    <test started-at="2022-05-26T17:24:26 IST" name="Test" finished-at="2022-05-26T17:25:43 IST" duration-ms="76988">
+    <test started-at="2022-05-28T10:40:07 IST" name="Default test" finished-at="2022-05-28T10:40:15 IST" duration-ms="7873">
       <class name="Test_Classes.TC01_Wiki">
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:Test_Classes.TC01_Wiki@64cd705f]" started-at="2022-05-26T17:24:26 IST" name="setUpMethod" finished-at="2022-05-26T17:24:43 IST" duration-ms="17217" status="PASS">
+        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:Test_Classes.TC01_Wiki@654f0d9c]" started-at="2022-05-28T10:40:07 IST" name="setUpMethod" finished-at="2022-05-28T10:40:15 IST" duration-ms="7759" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=101.0.4951.67)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-FE9I4DB', ip: '192.168.166.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0abd822d286be394e13887caa94f47e9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=101.0.4951.67)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-FE9I4DB', ip: '192.168.166.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0abd822d286be394e13887caa94f47e9
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at Test_Classes.TC01_Wiki.setUpMethod(TC01_Wiki.java:32)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpMethod -->
-        <test-method signature="VerifyCountryNameFromWIKI()[pri:0, instance:Test_Classes.TC01_Wiki@64cd705f]" started-at="2022-05-26T17:24:43 IST" name="VerifyCountryNameFromWIKI" finished-at="2022-05-26T17:24:43 IST" duration-ms="209" status="PASS">
+        <test-method signature="VerifyCountryNameFromWIKI()[pri:0, instance:Test_Classes.TC01_Wiki@654f0d9c]" started-at="2022-05-28T10:40:15 IST" name="VerifyCountryNameFromWIKI" finished-at="2022-05-28T10:40:15 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=101.0.4951.67)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-FE9I4DB', ip: '192.168.166.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0abd822d286be394e13887caa94f47e9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=101.0.4951.67)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-FE9I4DB', ip: '192.168.166.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57491}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0abd822d286be394e13887caa94f47e9
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at Test_Classes.TC01_Wiki.setUpMethod(TC01_Wiki.java:32)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCountryNameFromWIKI -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:Test_Classes.TC01_Wiki@64cd705f]" started-at="2022-05-26T17:24:43 IST" name="tearDownMethod" finished-at="2022-05-26T17:24:44 IST" duration-ms="512" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:Test_Classes.TC01_Wiki@64cd705f]" started-at="2022-05-26T17:24:44 IST" name="setUpMethod" finished-at="2022-05-26T17:24:59 IST" duration-ms="14862" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="VerifyReleaseDateFromWIKI()[pri:0, instance:Test_Classes.TC01_Wiki@64cd705f]" started-at="2022-05-26T17:24:59 IST" name="VerifyReleaseDateFromWIKI" finished-at="2022-05-26T17:24:59 IST" duration-ms="108" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyReleaseDateFromWIKI -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:Test_Classes.TC01_Wiki@64cd705f]" started-at="2022-05-26T17:24:59 IST" name="tearDownMethod" finished-at="2022-05-26T17:24:59 IST" duration-ms="453" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:Test_Classes.TC01_Wiki@654f0d9c]" started-at="2022-05-28T10:40:15 IST" name="tearDownMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1653714615488" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
       </class> <!-- Test_Classes.TC01_Wiki -->
-      <class name="Test_Classes.TC02_IMDB">
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:Test_Classes.TC02_IMDB@35ef1869]" started-at="2022-05-26T17:24:59 IST" name="setUpMethod" finished-at="2022-05-26T17:25:21 IST" duration-ms="21659" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="verifyCountryNameFromIMBD()[pri:0, instance:Test_Classes.TC02_IMDB@35ef1869]" started-at="2022-05-26T17:25:21 IST" name="verifyCountryNameFromIMBD" finished-at="2022-05-26T17:25:21 IST" duration-ms="322" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCountryNameFromIMBD -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:Test_Classes.TC02_IMDB@35ef1869]" started-at="2022-05-26T17:25:21 IST" name="tearDownMethod" finished-at="2022-05-26T17:25:22 IST" duration-ms="447" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUpMethod()[pri:0, instance:Test_Classes.TC02_IMDB@35ef1869]" started-at="2022-05-26T17:25:22 IST" name="setUpMethod" finished-at="2022-05-26T17:25:42 IST" duration-ms="20078" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpMethod -->
-        <test-method signature="verifyReleaseDateFromIMBD()[pri:0, instance:Test_Classes.TC02_IMDB@35ef1869]" started-at="2022-05-26T17:25:42 IST" name="verifyReleaseDateFromIMBD" finished-at="2022-05-26T17:25:42 IST" duration-ms="447" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyReleaseDateFromIMBD -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:Test_Classes.TC02_IMDB@35ef1869]" started-at="2022-05-26T17:25:42 IST" name="tearDownMethod" finished-at="2022-05-26T17:25:43 IST" duration-ms="597" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-      </class> <!-- Test_Classes.TC02_IMDB -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -5,7 +5,7 @@
     <classes>
       <class name="Test_Classes.TC01_Wiki">
         <methods>
-          <include name="verifyReleaseDateFromWIKI"/>
+          <include name="VerifyCountryNameFromWIKI"/>
           <include name="setUpMethod"/>
           <include name="tearDownMethod"/>
         </methods>

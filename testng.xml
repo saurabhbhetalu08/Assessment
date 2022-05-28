@@ -5,6 +5,7 @@
     <classes>
       <class name="Test_Classes.TC01_Wiki"/>
       <class name="Test_Classes.TC02_IMDB"/>
+      <class name="Test_Classes.TC03_Compare_Deatails_of_IMBD_Wiki"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

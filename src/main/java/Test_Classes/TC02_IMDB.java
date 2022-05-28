@@ -76,5 +76,7 @@ public class TC02_IMDB
 		driver.quit();
 		System.out.println("Closed Browser");
 	}
+	
+	
 
 }
