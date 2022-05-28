@@ -34,7 +34,7 @@ public class TC03_Compare_Deatails_of_IMBD_Wiki
 	}
 	
 	@Test
-	public void test1()
+	public void CompareCountryonWiki_IMBD()
 	{		
 		driver.get("https://www.imdb.com/title/tt9389998/");
 		System.out.println("Open Pushpa The Rise on IMBD");
@@ -67,7 +67,7 @@ public class TC03_Compare_Deatails_of_IMBD_Wiki
 	
 	
 	@Test
-	public void test2()
+	public void CompareReleaseDateonWiki_IMBD()
 	{
 		driver.get("https://www.imdb.com/title/tt9389998/");
 		System.out.println("Open Pushpa The Rise on IMBD");
